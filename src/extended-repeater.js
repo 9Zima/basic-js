@@ -25,10 +25,6 @@ function repeater(tr, options) {
   options.repeatTimes = 0;
   if (options.additionRepeatTimes === undefined)
   options.additionRepeatTimes = 0;
-  // tr += "";
-  // options.separator += "";
-  console.log(tr)
-  console.log(options)
   do {
     resultStr += tr;
     for (let j = 0; j < options.additionRepeatTimes; j++) {
