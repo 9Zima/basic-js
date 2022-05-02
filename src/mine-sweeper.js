@@ -33,16 +33,21 @@ function minesweeper(matrix) {
   }
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
+      // console.log(numbMatrix[i][j])
       if (matrix[i][j] === true) {
         for (let g = -1; g < 2; g++) {
           for (let k = -1; k < 2; k++) {
-            matrix[i+g][j+k]++;
+            console.log(numbMatrix[i][j])
+            if (numbMatrix[i+g][j+k] !== undefined){
+              // console.log("Error")
+            numbMatrix[i+g][j+k]++;
+          }
           }
         }
       }
     }
   }
-  console.log(numbMatrix)
+  // console.log(numbMatrix)
   return numbMatrix
 }
 
